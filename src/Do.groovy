@@ -1,6 +1,6 @@
 class Do{
 	def static magic(){
-		Integer.metaClass{
+		Number.metaClass{
 			ejecutar = { unosBloques ->  }
 			doble = {->	new DobleOperation().execute(delegate)}
 			redondear ={-> new RedondearOperation().execute(delegate)}
