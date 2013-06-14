@@ -1,6 +1,6 @@
 class Do{
 	def static magic(){
-		Number.metaClass{
+		BigDecimal.metaClass{
 			
 			ejecutar = { unBloque -> delegate.with(unBloque)  }
 			
@@ -8,7 +8,8 @@ class Do{
 			
 			redondear ={-> new RedondearOperation().execute(delegate)}
 			
-			sumar = {unNumero ->new SumarOperation(other: unNumero).execute(delegate)}
+			sumar = {unNumero ->new SumarOperation(unNumero).execute(delegate)}
+			
 		}
 	}
 }

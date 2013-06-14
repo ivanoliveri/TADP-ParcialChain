@@ -15,7 +15,7 @@ class ChainsOfOperationsTestCase {
 	@Test
 	void test_redondear_cuatro_punto_dos(){
 		Do.magic()
-		assertEquals(4.0,4.2.redondear())
+		assertEquals(4.0,4.2.redondear(),0.1)
 	}
 	
 	@Test	
